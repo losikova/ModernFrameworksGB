@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Maps
+
+  Created by Анастасия Лосикова on 2/9/23.
+  
+*/
+
+"CFBundleDisplayName" = "Мой маршрут";
+
+"CFBundleName" = "RouteTracker";
