@@ -12,19 +12,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
         let windowFrame = UIScreen.main.bounds
-
         self.window = UIWindow(frame: windowFrame)
+
         self.window?.makeKeyAndVisible()
-
-        let mainVC = MapViewController()
-        let navigationVC = UINavigationController(rootViewController: mainVC)
-
-        self.window?.rootViewController = navigationVC
-
-        let windowScene = scene as? UIWindowScene
         self.window?.windowScene = windowScene
+
+        let tabBarController = TabBarController()
+        self.window?.rootViewController = tabBarController
+
+        // MARK: Set dark InterfaceStyle
+
+        self.window?.overrideUserInterfaceStyle = .dark
 
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
