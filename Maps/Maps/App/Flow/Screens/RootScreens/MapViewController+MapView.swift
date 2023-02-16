@@ -4,6 +4,7 @@
 //
 //  Created by Анастасия Лосикова on 2/2/23.
 //
+
 import UIKit
 import GoogleMaps
 import OSLog
@@ -24,6 +25,19 @@ extension MapViewController: GMSMapViewDelegate {
         publicMapView.animate(toLocation: coordinate)
 */
 
+        // Place one marker at one tap and move the center of map to it
+        // leaving the rest markers of the previous taps on the map
+        // and drawing lines between them if update location pressed.
+        let marker = GMSMarker(position: coordinate)
+        marker.map = publicMapView
+
+        // Add a point to the route path and update the path of the route line.
+        routePath?.add(coordinate)
+        route?.path = routePath
+        // Set the camera to the point added to observe the movement.
+        let position = GMSCameraPosition(target: coordinate, zoom: 17)
+        publicMapView.animate(to: position)
+
         // Log the adress of place of the location.
         let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
         reverseGeocodeLog(location: location)
@@ -36,19 +50,6 @@ extension MapViewController: CLLocationManagerDelegate {
         guard let location = locations.first else { return }
         Logger.viewCycle.debug("\(location)")
 
-        // Place one marker at one tap and move the center of map to it
-        // leaving the rest markers of the previous taps on the map
-        // and drawing lines between them if update location pressed.
-        let marker = GMSMarker(position: location.coordinate)
-        marker.map = publicMapView
-
-        // Add a point to the route path and update the path of the route line.
-        routePath?.add(location.coordinate)
-        route?.path = routePath
-        // Set the camera to the point added to observe the movement.
-        let position = GMSCameraPosition(target: location.coordinate, zoom: 17)
-        publicMapView.animate(to: position)
-        
         // Log the address of place of the location.
         reverseGeocodeLog(location: location)
 
