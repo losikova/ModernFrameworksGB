@@ -2,7 +2,7 @@
 //  RealmManager.swift
 //  Maps
 //
-//  Created by Анастасия Лосикова on 2/9/23.
+//  Created by Anastasia Losikova on 16.02.2023.
 //
 
 import Foundation
