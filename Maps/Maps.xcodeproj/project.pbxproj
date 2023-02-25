@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B248151329AA25B0009CAE29 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248150F29AA25B0009CAE29 /* RealmManager.swift */; };
+		B248151429AA25B0009CAE29 /* PhotoStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151029AA25B0009CAE29 /* PhotoStorageService.swift */; };
+		B248151529AA25B0009CAE29 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151129AA25B0009CAE29 /* LocationManager.swift */; };
+		B248151629AA25B0009CAE29 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151229AA25B0009CAE29 /* NotificationManager.swift */; };
+		B248151829AA25C9009CAE29 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151729AA25C9009CAE29 /* UIImage+Extension.swift */; };
+		B248151A29AA260B009CAE29 /* MapStyleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151929AA260B009CAE29 /* MapStyleJSON.swift */; };
+		B248151D29AA2635009CAE29 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151B29AA2635009CAE29 /* AvatarViewController.swift */; };
+		B248151E29AA2635009CAE29 /* AvatarViewController+PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151C29AA2635009CAE29 /* AvatarViewController+PickerController.swift */; };
+		B248152029AA265D009CAE29 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248151F29AA265C009CAE29 /* AvatarView.swift */; };
 		C84480F626219A00007DEAC8 /* UsersInRealmErasable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84480F526219A00007DEAC8 /* UsersInRealmErasable.swift */; };
 		C84B8BFF261CA24C0027AD17 /* AlertShowable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B8BFE261CA24C0027AD17 /* AlertShowable+Extension.swift */; };
 		C85A72142616420C00A42DA6 /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A72132616420C00A42DA6 /* Logger+Extension.swift */; };
@@ -16,7 +25,6 @@
 		C85CE03C261B1EB10099AB60 /* ReverseGeocodeLoggable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85CE03B261B1EB10099AB60 /* ReverseGeocodeLoggable+Extension.swift */; };
 		C85CE047261B5BA30099AB60 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C85CE046261B5BA30099AB60 /* Realm */; };
 		C85CE049261B5BA30099AB60 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C85CE048261B5BA30099AB60 /* RealmSwift */; };
-		C85CE04D261B79B90099AB60 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85CE04C261B79B90099AB60 /* RealmManager.swift */; };
 		C85CE051261B7BD20099AB60 /* RoutePathRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85CE050261B7BD20099AB60 /* RoutePathRealm.swift */; };
 		C85E7358261493E000D4ABDC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C85E7357261493E000D4ABDC /* .swiftlint.yml */; };
 		C866D9F62614B1B30028BAE1 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = C866D9F52614B1B30028BAE1 /* GoogleMapsBase */; };
@@ -41,7 +49,6 @@
 		C8A789C8261478E7002C24B4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A789C7261478E7002C24B4 /* MapViewController.swift */; };
 		C8A789CD261478EA002C24B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8A789CC261478EA002C24B4 /* Assets.xcassets */; };
 		C8A789D0261478EA002C24B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A789CE261478EA002C24B4 /* LaunchScreen.storyboard */; };
-		C8A81628263262A700A9C962 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A81627263262A700A9C962 /* NotificationManager.swift */; };
 		C8B573002621D0E0001616DE /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B572FF2621D0E0001616DE /* PasswordViewController.swift */; };
 		C8CB74E5261F736A00827779 /* NibNameLoadable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CB74E4261F736A00827779 /* NibNameLoadable+Extension.swift */; };
 		C8EC58EE2624AFEA004CCCC9 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC58ED2624AFEA004CCCC9 /* AppRouter.swift */; };
@@ -49,13 +56,21 @@
 		C8EC58F42624C272004CCCC9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC58F32624C272004CCCC9 /* UIViewController+Extension.swift */; };
 		C8EC58FC2626BA01004CCCC9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C8EC58FB2626BA01004CCCC9 /* RxCocoa */; };
 		C8EC58FE2626BA01004CCCC9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C8EC58FD2626BA01004CCCC9 /* RxSwift */; };
-		C8EC5902262832BD004CCCC9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC5901262832BD004CCCC9 /* LocationManager.swift */; };
 		C8F217D2261F267900457B1F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F217D1261F267900457B1F /* TabBarController.swift */; };
 		C8F217D9261F2BCC00457B1F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F217D8261F2BCC00457B1F /* UIColor+Extension.swift */; };
 		C8F217DC261F2E9400457B1F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F217DB261F2E9400457B1F /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B248150F29AA25B0009CAE29 /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B248151029AA25B0009CAE29 /* PhotoStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStorageService.swift; sourceTree = "<group>"; };
+		B248151129AA25B0009CAE29 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		B248151229AA25B0009CAE29 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B248151729AA25C9009CAE29 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		B248151929AA260B009CAE29 /* MapStyleJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStyleJSON.swift; sourceTree = "<group>"; };
+		B248151B29AA2635009CAE29 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		B248151C29AA2635009CAE29 /* AvatarViewController+PickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AvatarViewController+PickerController.swift"; sourceTree = "<group>"; };
+		B248151F29AA265C009CAE29 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		C84480F526219A00007DEAC8 /* UsersInRealmErasable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInRealmErasable.swift; sourceTree = "<group>"; };
 		C84B8BFE261CA24C0027AD17 /* AlertShowable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertShowable+Extension.swift"; sourceTree = "<group>"; };
 		C85A72132616420C00A42DA6 /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
@@ -67,7 +82,6 @@
 		C85CE030261AAB330099AB60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C85CE032261AAB390099AB60 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C85CE03B261B1EB10099AB60 /* ReverseGeocodeLoggable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReverseGeocodeLoggable+Extension.swift"; sourceTree = "<group>"; };
-		C85CE04C261B79B90099AB60 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		C85CE050261B7BD20099AB60 /* RoutePathRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePathRealm.swift; sourceTree = "<group>"; };
 		C85E7357261493E000D4ABDC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C866DA0626163E200028BAE1 /* MapViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapView.swift"; sourceTree = "<group>"; };
@@ -89,13 +103,11 @@
 		C8A789CC261478EA002C24B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A789CF261478EA002C24B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8A789D1261478EA002C24B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8A81627263262A700A9C962 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		C8B572FF2621D0E0001616DE /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		C8CB74E4261F736A00827779 /* NibNameLoadable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibNameLoadable+Extension.swift"; sourceTree = "<group>"; };
 		C8EC58ED2624AFEA004CCCC9 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		C8EC58F02624B079004CCCC9 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
 		C8EC58F32624C272004CCCC9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		C8EC5901262832BD004CCCC9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C8F217D1261F267900457B1F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C8F217D8261F2BCC00457B1F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C8F217DB261F2E9400457B1F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +136,7 @@
 		C85A7212261641DA00A42DA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B248151729AA25C9009CAE29 /* UIImage+Extension.swift */,
 				C85A72132616420C00A42DA6 /* Logger+Extension.swift */,
 				C85A72172616433500A42DA6 /* CLLocationCoordinate2D+Extension.swift */,
 				C8F217D8261F2BCC00457B1F /* UIColor+Extension.swift */,
@@ -155,17 +168,10 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		C85CE04B261B79720099AB60 /* RealmManager */ = {
-			isa = PBXGroup;
-			children = (
-				C85CE04C261B79B90099AB60 /* RealmManager.swift */,
-			);
-			path = RealmManager;
-			sourceTree = "<group>";
-		};
 		C85CE04F261B7B0A0099AB60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B248151929AA260B009CAE29 /* MapStyleJSON.swift */,
 				C85CE050261B7BD20099AB60 /* RoutePathRealm.swift */,
 				C88C5AB6261F8232007ECAB7 /* UserRealm.swift */,
 			);
@@ -245,9 +251,10 @@
 		C85E73632614987600D4ABDC /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C8A816262632627900A9C962 /* NotificationManager */,
-				C8C9B1B32628B9D400E3A63F /* LocationManager */,
-				C85CE04B261B79720099AB60 /* RealmManager */,
+				B248151129AA25B0009CAE29 /* LocationManager.swift */,
+				B248151229AA25B0009CAE29 /* NotificationManager.swift */,
+				B248151029AA25B0009CAE29 /* PhotoStorageService.swift */,
+				B248150F29AA25B0009CAE29 /* RealmManager.swift */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -270,6 +277,7 @@
 		C88C5AB926203EE1007ECAB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B248151F29AA265C009CAE29 /* AvatarView.swift */,
 				C88C5ABA26203F25007ECAB7 /* UserView.swift */,
 				C88C5ABE26206091007ECAB7 /* SignInView.swift */,
 				C88C5AC1262060EC007ECAB7 /* SignUpView.swift */,
@@ -281,6 +289,8 @@
 		C88C5ACD262064AE007ECAB7 /* SuplimentaryScreens */ = {
 			isa = PBXGroup;
 			children = (
+				B248151B29AA2635009CAE29 /* AvatarViewController.swift */,
+				B248151C29AA2635009CAE29 /* AvatarViewController+PickerController.swift */,
 				C88C5ACE262064FA007ECAB7 /* SignInViewController.swift */,
 				C88C5AD126206511007ECAB7 /* SignUpViewController.swift */,
 				C8B572FF2621D0E0001616DE /* PasswordViewController.swift */,
@@ -324,22 +334,6 @@
 				C85E73602614975300D4ABDC /* Enviroments */,
 			);
 			path = Maps;
-			sourceTree = "<group>";
-		};
-		C8A816262632627900A9C962 /* NotificationManager */ = {
-			isa = PBXGroup;
-			children = (
-				C8A81627263262A700A9C962 /* NotificationManager.swift */,
-			);
-			path = NotificationManager;
-			sourceTree = "<group>";
-		};
-		C8C9B1B32628B9D400E3A63F /* LocationManager */ = {
-			isa = PBXGroup;
-			children = (
-				C8EC5901262832BD004CCCC9 /* LocationManager.swift */,
-			);
-			path = LocationManager;
 			sourceTree = "<group>";
 		};
 		C8F217D0261F21D800457B1F /* Common */ = {
@@ -465,10 +459,10 @@
 				C88C5ABF26206091007ECAB7 /* SignInView.swift in Sources */,
 				C8EC58F12624B079004CCCC9 /* AppRouterProtocol.swift in Sources */,
 				C86774C5261F4CDD00EE93DE /* UIFont+Extension.swift in Sources */,
+				B248151529AA25B0009CAE29 /* LocationManager.swift in Sources */,
 				C85CE051261B7BD20099AB60 /* RoutePathRealm.swift in Sources */,
 				C8EC58EE2624AFEA004CCCC9 /* AppRouter.swift in Sources */,
 				C8A789C8261478E7002C24B4 /* MapViewController.swift in Sources */,
-				C8EC5902262832BD004CCCC9 /* LocationManager.swift in Sources */,
 				C88C5AC826206243007ECAB7 /* Shakable+Extension.swift in Sources */,
 				C8F217DC261F2E9400457B1F /* UserViewController.swift in Sources */,
 				C88C5ACB262063A0007ECAB7 /* CGFloat+Extension.swift in Sources */,
@@ -476,21 +470,27 @@
 				C88C5AB7261F8232007ECAB7 /* UserRealm.swift in Sources */,
 				C84480F626219A00007DEAC8 /* UsersInRealmErasable.swift in Sources */,
 				C88C5AC5262061DE007ECAB7 /* ShakableViews.swift in Sources */,
+				B248151629AA25B0009CAE29 /* NotificationManager.swift in Sources */,
 				C8F217D2261F267900457B1F /* TabBarController.swift in Sources */,
 				C8F217D9261F2BCC00457B1F /* UIColor+Extension.swift in Sources */,
-				C85CE04D261B79B90099AB60 /* RealmManager.swift in Sources */,
 				C866DA0726163E200028BAE1 /* MapViewController+MapView.swift in Sources */,
+				B248151329AA25B0009CAE29 /* RealmManager.swift in Sources */,
 				C8EC58F42624C272004CCCC9 /* UIViewController+Extension.swift in Sources */,
 				C8A789C4261478E7002C24B4 /* AppDelegate.swift in Sources */,
 				C8B573002621D0E0001616DE /* PasswordViewController.swift in Sources */,
+				B248151D29AA2635009CAE29 /* AvatarViewController.swift in Sources */,
 				C8CB74E5261F736A00827779 /* NibNameLoadable+Extension.swift in Sources */,
+				B248151E29AA2635009CAE29 /* AvatarViewController+PickerController.swift in Sources */,
 				C85A72182616433500A42DA6 /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				B248152029AA265D009CAE29 /* AvatarView.swift in Sources */,
 				C85CE03C261B1EB10099AB60 /* ReverseGeocodeLoggable+Extension.swift in Sources */,
+				B248151429AA25B0009CAE29 /* PhotoStorageService.swift in Sources */,
 				C88C5AD226206511007ECAB7 /* SignUpViewController.swift in Sources */,
 				C88C5ABB26203F25007ECAB7 /* UserView.swift in Sources */,
-				C8A81628263262A700A9C962 /* NotificationManager.swift in Sources */,
+				B248151829AA25C9009CAE29 /* UIImage+Extension.swift in Sources */,
 				C8A789C6261478E7002C24B4 /* SceneDelegate.swift in Sources */,
 				C85A72142616420C00A42DA6 /* Logger+Extension.swift in Sources */,
+				B248151A29AA260B009CAE29 /* MapStyleJSON.swift in Sources */,
 				C88C5ACF262064FA007ECAB7 /* SignInViewController.swift in Sources */,
 				C84B8BFF261CA24C0027AD17 /* AlertShowable+Extension.swift in Sources */,
 			);
