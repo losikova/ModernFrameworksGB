@@ -2,7 +2,7 @@
 //  LocationManager.swift
 //  Maps
 //
-//  Created by Anastasia Losikova on 16.02.2023.
+//  Created by Anastasia Losikova on 25.02.2023.
 //
 
 import Foundation
